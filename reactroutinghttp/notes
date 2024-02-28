@@ -1,0 +1,4 @@
+https://redux.js.org/style-guide/#reducers-must-not-have-side-effects
+
+Reducers Must Not Have Side Effects
+Reducer functions should only depend on their state and action arguments, and should only calculate and return a new state value based on those arguments. They must not execute any kind of asynchronous logic (AJAX calls, timeouts, promises), generate random values (Date.now(), Math.random()), modify variables outside the reducer, or run other code that affects things outside the scope of the reducer function.

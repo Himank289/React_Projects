@@ -1,0 +1,41 @@
+http
+
+http calls -> restservice
+client http calls
+from react front-end  -> dbservice -> json-server ->add,delete,getall,get id
+
+
+JS
+http ->protocol 
+
+http rest client calls ->
+url,method
+url --> identify a resource on the server/back-end, action on that resource
+                                         @RestController
+                                         class EmpRestController
+                                        {
+map to CRUD DAO operations:              @GetMapping('emps') 
+url - http://localhost:8085/emps    -->  getallemps() { return emparr };
+method - get 
+
+url - http://localhost:8085/emps    -->  @PostMapping('emps')
+method - post                            addemp(@RequestBody Emp emp) {
+                                               //add it to emparr }
+methodb body - {id:3,empname:'ram',empsalary:5000}
+
+
+url - http://localhost:8085/emps/3   --> @DeleteMapping('emps/{id}')
+method - delete                           delemp(@PathVariable int id)
+                                         { ..}
+
+url - http://localhost:8085/emps    --> @PutMapping
+method- put
+method body - {id:3,empname:'ram',empsalary:10000}
+
+-----------------x-----x-------------------------------------
+JS http
+1) xmlhttprequest object - ajax http call
+2) fetch API - dont have to install any JS library , as standard JS engine
+3) axios API - install axios js library
+
+           

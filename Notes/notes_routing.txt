@@ -1,0 +1,7 @@
+routing:
+
+1) Links (URLs)
+2) mark the place where u wish the component template should be rendered
+3) url mapping : 
+   mapping of link/url with the component 
+   particular link/relative url --> route to which component

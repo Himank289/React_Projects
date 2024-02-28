@@ -1,0 +1,13 @@
+
+ listemp - emplst =  props.emparr - start
+
+ props.emparr got modified -> app commponent emparr -> props.emparr of listemp
+
+ stemplst(props.emparr)
+
+
+ useEffect (()=>{}) - called on every render of the component
+ useEffect(()=>{},[]) - first render of the component
+ useEffect(()=>{},[emparr]) - only when listed dependancy changes then 
+                             the useEffect should be called for that render
+  
