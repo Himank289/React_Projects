@@ -22,7 +22,7 @@ function ListBooks(){
         <>
         <h1>List of Books</h1>
       <ul>
-        {books1.map(b=><ShowBook bkid={b.bkid} bkname={b.bkname} bkprice={b.bkprice}/> )}
+        {books1.map(b=><ShowBook key={b.bkid} bkid={b.bkid} bkname={b.bkname} bkprice={b.bkprice}/> )}
       </ul>
         
         

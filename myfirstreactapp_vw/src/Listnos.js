@@ -18,7 +18,7 @@ function Listnos(props){
         <>
         <h1>List of numbers</h1>
       <ul>
-        {arr.map((no) => <li>{no}</li>)}
+        {arr.map((no,index) => <li key={index}>{no}</li>)}
       </ul>
         
         
