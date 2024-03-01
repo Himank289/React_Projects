@@ -8,6 +8,7 @@ import EmpForm from './EmpForm';
 import BookForm1 from './BookForm1';
 import Component1 from './NestedComponents';
 import ComponentUsingContext from './NestedComponentsSharedContext';
+import UseEffectEx from './UseEffectEx';
 
 function App(props) {
   let myname="himank";
@@ -45,6 +46,7 @@ function App(props) {
            <BookForm1 bkid='2' bkname='Learn React' bkprice='800'/><hr/>
            <Component1 username='Radhika'/>     
            <ComponentUsingContext username='Shivam'/>      */}
+           <UseEffectEx></UseEffectEx>
         </div>
   );
 }
