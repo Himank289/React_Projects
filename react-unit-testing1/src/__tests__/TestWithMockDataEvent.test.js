@@ -54,12 +54,12 @@ test("Unordered renders successfully with item entry for age greater than 50", (
 })
 
 test("Email link click handler called", async () => {
-    const mockHandleClick = jest.fn();
+    const mockHandleClick = jest.fn();  //mock event handler function
     render(<TestWithMockDataEvent
                 data={mockData} 
                 displayUnorderedList={true}
                 handleClick = {mockHandleClick}
           />)
-    await userEvent.click(screen.getByText(/mmcvanamy0@e-recht24.de/i));
+    await userEvent.click(screen.getByText(/mmcvanamy0@e-recht24.de/i)); //firing a click event
     expect(mockHandleClick).toHaveBeenCalled();
 })
